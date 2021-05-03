@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>background color</title>
+    <script>
+      function change_color(select) {
+        var color = select.options[select.selectedIndex].textContent;
+
+ 
+        document.body.style.backgroundColor = color;
+      }
+    </script>
+  </head>
+  <body>
+    <center>
+      <select name="colorPick" onchange="change_color(this);">
+        <option value="0">Background Color</option>
+        <option value="1">Blue</option>
+        <option value="2">Cyan</option>
+        <option value="3">black</option>
+        <option value="4">White</option>
+        <option value="5">green</option>
+        <option value="6">purple</option>
+        <option value="7">orange</option>
+      </select>
+    </center>
+  </body>
+</html>
